@@ -27,6 +27,10 @@ body {
   height: 100vh;
 }
 
+#bg_after {
+  display: none;
+}
+
 #tanya_face {
   position: absolute;
   left: 29%;
