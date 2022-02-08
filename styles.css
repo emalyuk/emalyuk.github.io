@@ -3,6 +3,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  height: calc(100vh - 60px);
 }
 
 .container {
@@ -10,10 +11,14 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  height: 100%;
+}
+.container_inner {
+  height: 100%;
 }
 
 #img_container {
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   position: relative;
@@ -22,53 +27,14 @@ body {
 #bg_before,
 #bg_after {
   max-width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 #bg_after {
   display: none;
 }
 
-#tanya_face {
-  position: absolute;
-  left: 29%;
-  top: 20%;
-  width: 125px;
-  height: auto;
-  transform: rotate(30deg);
-}
-
-#my_face {
-  position: absolute;
-  right: -15px;
-  top: 36%;
-  width: 141px;
-  height: auto;
-  transform: rotate(20deg);
-}
-
-#tanya_face_happy {
-  display: none;
-  position: absolute;
-  left: 29%;
-  top: 20%;
-  width: 125px;
-  height: auto;
-  transform: rotate(30deg);
-}
-
-#my_face_happy {
-  display: none;
-  position: absolute;
-  right: 0px;
-  top: 37%;
-  width: 125px;
-  height: auto;
-  transform: rotate(16deg);
-}
-
-#text1,
-#text2 {
+#text1 {
   position: absolute;
 }
 
