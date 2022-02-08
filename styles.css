@@ -84,8 +84,8 @@ body {
 #yes_button,
 #no_button {
   position: absolute;
-  top: 15%;
-  left: 30%;
+  top: 16%;
+  right: 6%;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   letter-spacing: 2px;
