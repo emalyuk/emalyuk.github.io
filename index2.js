@@ -24,8 +24,9 @@ setInterval(() => {
 
   const _seconds = Math.floor(diff / SECOND);
 
+  // console.log(`${_day} days ${_hour} hours ${_minute} minutes ${_seconds} seconds`)
   document.getElementById("days").innerText = _days,
   document.getElementById("hours").innerText = _hours,
-  document.getElementById("minutes").innerText = _minutes,
+  document.getElementById("minutes").innerText = _minute,
   document.getElementById("seconds").innerText = _seconds;
 }, 1000);

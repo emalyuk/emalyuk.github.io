@@ -1,4 +1,4 @@
-body {
+/* body {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -11,73 +11,83 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  height: 100%;
-}
-.container_inner {
-  height: 100%;
+  height: 100vh;
+  background-image: url(./assets/bg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+/* general styling */
+:root {
+  --smaller: 0.75;
 }
 
-#img_container {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
   height: 100%;
-  display: flex;
+  margin: 0;
+}
+
+body {
   align-items: center;
-  position: relative;
+  background-color: #ffd54f;
+  display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
-#bg_before,
-#bg_after {
-  max-width: 100%;
-  height: 100%;
-}
-
-#bg_after {
-  display: none;
-}
-
-#text1 {
-  position: absolute;
-}
-
-#text1 {
-  top: 2%;
-  font-size: 40px;
+.container {
+  color: #333;
+  margin: 0 auto;
   text-align: center;
-  color: white;
 }
 
-#yes_button,
-#no_button {
-  position: absolute;
-  top: 16%;
-  right: 6%;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  letter-spacing: 2px;
-  text-decoration: none;
+h1 {
+  font-weight: normal;
+  letter-spacing: 0.125rem;
   text-transform: uppercase;
-  color: #000;
-  cursor: pointer;
-  border: 3px solid;
-  padding: 15px 20px;
-  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
-    5px 5px 0px 0px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
 }
 
-#no_button {
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.emoji {
   display: none;
+  padding: 1rem;
 }
 
-#yes_button:active,
-#no_button:active {
-  box-shadow: 0px 0px 0px 0px;
+.emoji span {
+  font-size: 4rem;
+  padding: 0 0.5rem;
 }
 
-@media (min-width: 768px) {
-  #yes_button:active,
-  #no_button:active {
-    padding: 0.25em 0.75em;
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+
+  li {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+
+  li span {
+    font-size: calc(3.375rem * var(--smaller));
   }
 }

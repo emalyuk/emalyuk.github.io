@@ -5,25 +5,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Invite Dating</title>
+  <title>Cats Meet</title>
+  <link rel="icon" href="./favicon2.png">
   <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
   <div class="container">
-    <div class="container_inner">
-      <div id="img_container" onclick="() => handleClick()">
-        <span id="text1">ПРЕДЛОЖЕНИЕ ВСТРЕЧАТЬСЯ</span>
-        <button id="yes_button" role="button" onclick="function hi(){handleClick()};hi()">ПАЕХАЛИ!</button>
-        <button id="no_button" role="button" onclick="function hi(){handleClick()};hi()">ВЕРНУТЬСЯ(</button>
-
-
-        <img src="./assets/bg_before.jpg" id="bg_before" />
-        <img src="./assets/bg_after.jpg" id="bg_after" />
-      </div>
+    <h1 id="headline">Встреча китов через</h1>
+    <div id="countdown">
+      <ul>
+        <li><span id="days">--</span>days</li>
+        <li><span id="hours">--</span>Hours</li>
+        <li><span id="minutes">--</span>Minutes</li>
+        <li><span id="seconds">--</span>Seconds</li>
+      </ul>
     </div>
+    <div id="content" class="emoji">
+      <span>🥳</span>
+      <span>🎉</span>
+      <span>🎂</span>
+    </div>
+  </div>
 
 </body>
+
+<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+<script>dayjs().format()</script>
 <script src="./index.js"></script>
 
 </html>
