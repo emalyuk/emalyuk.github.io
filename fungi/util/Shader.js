@@ -1,5 +1,4 @@
 import gl,{ UNI_MODEL_MAT_NAME,UNI_NORM_MAT_NAME } from "../gl.js";
-import fungi from "../fungi.js";
 
 //Shortcut to create a shader based on the vert/frag progress text
 function createShader(name,vert,frag,tfeedback = null){
